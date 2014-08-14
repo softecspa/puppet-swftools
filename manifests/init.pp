@@ -12,7 +12,7 @@ class swftools {
            package {
                 "swftools":
                     ensure  => present,
-                    require => [ Class["apt_puppetlabs"] ],
+                    require => [ Class["apt"] ],
             }
         }
 
