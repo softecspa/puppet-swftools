@@ -10,15 +10,15 @@ class swftools {
     case $lsbdistcodename {
         "lucid": {
            package {
-                "swftools": 
+                "swftools":
                     ensure  => present,
-                    require => [ Class["apt"] ],
+                    require => [ Class["apt_puppetlabs"] ],
             }
         }
 
         default : {
             package {
-                "swftools": 
+                "swftools":
                     ensure => present;
             }
         }
